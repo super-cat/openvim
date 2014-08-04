@@ -37,7 +37,7 @@ filetype plugin indent on
 
 "更改配色方案
 if has('gui_running')
-    set background=dark
+    set background=light
 else
     set background=dark
 endif
