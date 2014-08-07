@@ -44,3 +44,36 @@ else
 endif
 
 colorscheme solarized
+"==============================================================================
+"设置快捷键前缀为“,”
+let mapleader = ","
+"==============================================================================
+"快速重载_vimrc
+map <silent> <leader>ss :source D:\Program files\openvim\_vimrc<CR>
+"==============================================================================
+
+"设置窗口透明盒缩放
+"设置透明度为230
+map <silent> <leader>tm :call libcallnr("vimtweak.dll", "SetAlpha", 230)<CR>
+"不透明
+map <silent> <leader>btm :call libcallnr("vimtweak.dll", "SetAlpha", 255)<CR>
+"窗口最大化
+map <silent> <leader>fd :call libcallnr("vimtweak.dll", "EnableMaximize", 1)<CR>
+"窗口缩小
+map <silent> <leader>sx :call libcallnr("vimtweak.dll", "EnableMaximize", 0)<CR>
+"==============================================================================
+
+"设置taglist快捷键以及配置
+nmap tl :Tlist<CR>
+"let Tlist_Auto_Open = 1 "启动gvim自动打开taglist
+let Tlist_Auto_Update = 0
+let Tlist_Highlight_Tag_On_BufEnter = 1
+let Tlist_Use_Right_Window = 1
+let Tlist_WinWidth = 20
+
+"==============================================================================
+
+"设置nerdtree快捷键以及配置
+nmap nd :NERDTree<CR>
+nmap nc :NERDTreeClose<CR>
+"==============================================================================
