@@ -68,7 +68,6 @@ setlocal noswapfile
 "pathogen插件配置
 execute pathogen#infect()
 syntax on   "语法高亮
-set nu
 filetype plugin indent on
 
 "更改配色方案
